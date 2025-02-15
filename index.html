@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open Sans"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="headerAccess.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div class="costHeader pointer" id="header">
+      <label class="pointer"
+        ><i
+          class="fa fa-shopping-cart"
+          id="cartCheckout"
+          onclick="goToCheckoutNow()"
+        ></i
+        >&nbsp;Total: $</label
+      ><label id="costLabel" class="pointer"></label>
+    </div>
+    <div class="dropdown" id="dropDiv">
+      <ul id="dropList"></ul>
+    </div>
+    <nav class="navtest">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="appetizers.html">Appetizers</a></li>
+        <li><a href="entrees.html">Entrees</a></li>
+        <li><a href="desserts.html">Desserts</a></li>
+        <li><a href="drinks.html">Drinks</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="referencepage.html">Reference Page</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </nav>
+<div style="display: none;">
+    <div class="costHeaderMenu pointer" id="headerMenu">
+      <a href="aboutus.html"
+        ><img src="impeckablelogo.png" class="logo-style" /></a
+      >&nbsp;&nbsp;<label class="pointer">Menu</label
+      ><label id="costLabelMenu" class="pointer"></label>
+    </div>
+    <div class="dropdownMenu" id="dropDivMenu">
+      <ul id="dropListMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="appetizers.html">Appetizers</a></li>
+        <li><a href="entrees.html">Entrees</a></li>
+        <li><a href="desserts.html">Desserts</a></li>
+        <li><a href="drinks.html">Drinks</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="referencepage.html">Reference Page</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+
+    <div class="scroll-box">
+      <img src="homepagetitleimage.png" class="scroll-img override" width="100%">
+  </div>
+
+    
+    <h1 class="newest-releases-h1">Newest Releases:</h1>
+    <div>
+      <div>
+        <ul class="newest-releases">
+          <a class="a-tag" href="appetizers.html"
+            ><li class="new-release-item-li">Samosas (Appetizer)</li>
+            <img class="new-release-item" src="samapps.jpg" /></a
+          ><br />
+          <a class="a-tag" href="entrees.html"
+            ><li class="new-release-item-li">Ratatouille (Entree)</li>
+            <img class="new-release-item" src="ratatouille.jpg" /></a
+          ><br />
+          <a class="a-tag" href="desserts.html"
+            ><li class="new-release-item-li">Tres Leches Cake (Dessert)</li>
+            <img class="new-release-item" src="tresleches.jpg" /></a
+          ><br />
+        </ul>
+      </div>
+    </div>
+    <h1 class="check-these-out">Check these out when you order.</h1>
+    <h3 class="call-us">
+      Call and tell us your order for pick-up/take-out, and order online for
+      delivery!
+    </h3>
+    <hr />
+    <center>
+      <button class="order-delivery" onclick="goToAppetizers();">
+        Order Delivery
+      </button>
+    </center>
+    <hr />
+    <div class="container-mainpage">
+      <div width="50%">
+        <h1 class="questions-h1">QUESTIONS?</h1>
+        <p class="you-can-find">
+          You can find answers to many of your questions in our frequently asked
+          questions section <br />or FAQ. The questions are the five most asked
+          questions we've had, and we wanted to <br />provide the answers for
+          you without having to call us.
+        </p>
+        <br />
+        <p class="locations">
+          Contact us to find our availabilities, locations near you, or any
+          other questions.
+        </p>
+      </div>
+      <div class="mar-right">
+        <h2 class="contact-font">Phone Number:</h2>
+        <h2 class="contact-font">+1 (678) 843-1535</h2>
+        <br /><br />
+        <h2 class="contact-font">Email:</h2>
+        <h2 class="email-css">impeckableatlanta@gmail.com</h2>
+      </div>
+    </div>
+
+    <hr />
+    <div class="questions-homepage">
+      <h3 class="q">RESERVATIONS & WALK-IN SERVICES</h3>
+      <p class="contact-index">
+        We offer both reservations and walk-in services. However, if you
+        <br />are visiting with a large party, we ask that you make a
+        <br />reservation beforehand. We do this to ensure you receive the<br />
+        best and speediest service possible. We hope you enjoy your <br />time
+        at ImPeckable!
+      </p>
+    </div>
+    <br />
+    <hr />
+    <button class="open-button" onclick="toggleTextBox()"><i class="fas fa-clipboard-list" style="font-size: 50px; cursor: pointer;"></i></button>
+    <div class="quiz" id="quiz" onclick="toggleTextBox()">
+      <div class="quiz-box" onclick="event.stopPropagation();">
+          <h1>What should you order?</h1>
+          <h2>1. Select the food you want</h2>
+          <button onclick="q1Asian()" class="btnsQuiz">Asian</button>
+          <button onclick="q1European()" class="btnsQuiz">European</button>
+          <button onclick="q1LatinAmerican()" class="btnsQuiz">Latin American</button>
+          <button onclick="q1Indian()" class="btnsQuiz">Indian</button>
+          <button onclick="q1MiddleEastern()" class="btnsQuiz">Middle Eastern</button><br>
+          <label id="question1Result"></label>
+          <h2>2. Select the stage of food you want</h2>
+          <button onclick="q2Appetizer()" class="btnsQuiz">Appetizer</button>
+          <button onclick="q2Entree()" class="btnsQuiz">Entree</button>
+          <button onclick="q2Dessert()" class="btnsQuiz">Dessert</button><br>
+          <label id="question2Result"></label>
+          <button class="enterBtn" onclick="enterQuiz()">Enter</button>
+          <center><br>
+          <div id="resultOfQuiz">
+            <label id="youShouldGet"></label>
+            <br><br>
+            <img width="80%" class="action" id="img1" onclick="goToSite()"><br><br>
+            <img width="80%" class="action" id="img2" onclick="goToSite()"><br><br>
+            <img width="80%" class="action" id="img3" onclick="goToSite()"><br><br>
+          </div>
+        </center>
+          <button class="close-button" onclick="toggleTextBox()">Close</button>
+      </div>
+  </div>
+    <div class="contact-info">
+      <label
+        ><a
+          href="https://mail.google.com/mail/?view=cm&to=impeckableatlanta@gmail.com&su=Support%20Request&body=Welcome%20to%20our%20restaurant!%0A%0APlease%20let%20us%20know%20what%20issues%20you%20are%20facing."
+          target="_blank"
+          >impeckableatlanta@gmail.com</a
+        ></label
+      ><label>|</label><label>675 Peachmont Avenue, Alpharetta, GA</label
+      ><label>|</label><label>+1 (678) 843-1535</label>
+    </div>
+    <script src="sketch.js"></script>
+  </body>
+</html>
