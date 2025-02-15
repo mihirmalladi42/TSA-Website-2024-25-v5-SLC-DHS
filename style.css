@@ -1,0 +1,230 @@
+
+  .q {
+    font-family: oswald;
+    text-align: center;
+    font-size: 40px;
+  }
+  .contact-index {
+    color: black;
+    font-family: century-gothic;
+    font-size: 25px;
+    text-align: center;
+    font-style: italic;
+  }
+  .contact-info {
+    display: flex;
+  justify-content: space-around;
+  font-size: 1.2vw;
+  font-family: verdana !important;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.newest-releases-h1 {
+  color: #f44f4c;
+  font-family: oswald;
+  font-size: 40px;
+  margin-left: 50px;
+  text-align: left;
+}
+.newest-releases {
+  list-style-type: square;
+  font-family: century-gothic;
+  font-size: 30px;
+  margin-left: 50px;
+  text-decoration: none;
+}
+.check-these-out {
+  font-family: century-gothic;
+  font-size: 30px;
+  margin-left: 50px;
+  text-align: left;
+}
+.call-us {
+  font-family: century-gothic;
+  font-size: 16px;
+  margin-left: 50px;
+  text-align: left;
+}
+.order-delivery {
+  background-color: #f44f4c;
+  border-radius: 2px;
+  border: none;
+  color: white;
+  font-family: oswald;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 24px;
+  transition: background-color 0.2s, transform 0.2s ease-in-out;
+}
+.order-delivery:hover {
+  transform: scale(1.1);
+  background-color: #cf4542;
+  cursor: pointer;
+}
+.container-mainpage {
+  margin-left: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.questions-h1 {
+  font-family: oswald;
+  font-size: 60px;
+  text-align: left;
+}
+.contact-font {
+  font-family: "open sans";
+  font-size: 20px;
+}
+.you-can-find {
+  font-family: "open sans";
+  font-size: 20px;
+  text-align: left;
+}
+.locations {
+  font-family: century-gothic;
+  font-size: 18px;
+  text-align: left;
+  font-style: italic;
+}
+.mar-right {
+  margin-right: 50px;
+}
+.email-css {
+  font-family: century-gothic;
+  font-size: 20px;
+}
+.new-release-item {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  margin: 10px;
+  width: 200px;
+}
+.new-release-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 0 5px rgb(216, 216, 216);
+}
+.new-release-item-li {
+  list-style-type: square;
+  font-family: century-gothic;
+  transition: transform 0.2s ease-in-out;
+}
+.new-release-item-li:hover {
+  transform: scale(1.05);
+}
+.new-release-item-li:hover img{
+  transform: scale(1.05);
+  box-shadow: 0 0 0 5px rgb(216, 216, 216);
+}
+.a-tag {
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(54, 54, 54) !important;
+}
+a:visited {
+  color: rgb(54, 54, 54) !important;
+}
+
+.open-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #f44f4c;
+  box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.1);
+
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  z-index: 2000;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+.open-button:hover {
+  transform: scale(1.05);
+  background-color: #d14341;
+  cursor: pointer
+}
+.content {
+  padding: 20px;
+  font-size: 18px;
+}
+
+.quiz {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.quiz-box {
+  width: 25%;
+  height: 80%;
+  background: rgb(248, 248, 248);
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  border-radius: 10px;
+  position: relative;
+  font-family: "Open Sans";
+}
+.close-button {
+  display: block;
+  margin-top: 20px;
+  padding: 10px;
+  background: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+}
+.btnsQuiz {
+  border: 1px solid #d6d6d6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 10px;
+  border-radius: 3px;
+  background-color:rgb(212, 212, 212);
+  transition: background-color 0.2s ease-in-out;
+}
+.btnsQuiz:hover {
+  background-color:rgb(174, 174, 174);
+  border: 1px solid rgb(214, 214, 214);
+  cursor: pointer;
+}
+.enterBtn {
+  display: block;
+  margin-top: 20px;
+  padding: 10px;
+  background: #d6d6d6;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+}
+#resultsOfQuiz {
+  text-align: center;
+  
+}
+#youShouldGet {
+  font-size: 24px;
+}
+.action {
+  border: 1px solid rgb(220, 220, 220);
+  transition: transform 0.2s ease-in-out;
+}
+.action:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
